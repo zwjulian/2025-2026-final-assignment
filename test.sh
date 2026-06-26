@@ -1,13 +1,10 @@
 #!/bin/bash
 
 # Install the required Python dependencies
-if command -v uv &> /dev/null; then
-    uv sync
-    uv run src/main.py &
-else
-    python3 -m pip install -r requirements.txt
-    python3 src/main.py &
-fi
+python3 -m pip install -r requirements.txt
+
+# Run the Python script in the background
+python3 src/main.py &
 
 # Get the process ID of the Python script
 PID=$!

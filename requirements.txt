@@ -1,1 +1,8 @@
-# Specify your requirements here (do NOT use pip freeze)
+torch
+numpy
+pandas
+matplotlib
+scipy
+tqdm
+gymnasium[mujoco]
+mujoco
